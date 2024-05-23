@@ -1,0 +1,40 @@
+@import url(../CSS/all.css);
+@import url(../CSS/style.css);
+@import url(../CSS/utility.css);
+
+.confirm_wrapper{
+    display: grid;
+    gap: var(--g-sml);
+    margin: auto;
+    width: 50%;
+    padding-block: var(--g-xl);
+}
+.confirm_img{
+    width: 120px;
+}
+.confirm_wrapper h1{
+    font-size: var(--dk-heading);
+    font-weight: var(--mthick);
+}
+.confirm_wrapper p{
+    line-height: 20px;
+}
+@media screen and (max-width: 600px){
+    .confirm_wrapper{
+        width: 100% !important;
+        padding: var(--g-sml) !important;
+    }
+    .confirm_img{
+        width: 80px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .confirm_wrapper{
+        width: 75%;
+        padding: var(--lxl) var(--g-sml);
+    }
+    .confirm_img{
+        width: 100px;
+    }
+}

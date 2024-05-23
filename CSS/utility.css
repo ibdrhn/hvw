@@ -1,0 +1,42 @@
+@import url(./style.css);
+@import url(./all.css);
+
+.bg_primary{
+    background-color: var(--primary);
+}
+.bg_secondary{
+    background-color: var(--secondary);
+}
+.bg_dominant{
+    background-color: var(--dominant);
+}
+.bg_primary{
+    background-color: var(--primary);
+}
+.bg_transparent{
+    background-color: var(--transparent);
+}
+.bg_black{
+    background-color: var(--black);
+}
+.bg_about{
+    background-image: url(../Image/Banner/about.png);
+}
+.bg_team{
+    background-image: url(../Image/Banner/team.png);
+}
+.bg_partners{
+    background-image: url(../Image/Banner/partner.png);
+}
+.bg_courses{
+    background-image: url(../Image/Banner/course.png);
+}
+.bg_career{
+    background-image: url(../Image/Banner/career.png);
+}
+.bg_career-apply{
+    background-image: url(../Image/Banner/career-apply.png);
+}
+.bg_contact{
+    background-image: url(../Image/Banner/contact.png);
+}
