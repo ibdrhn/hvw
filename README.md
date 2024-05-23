@@ -1,2 +1,2 @@
 # HBW
-The website of hot beans web which was built and deployed by me. This repo is free to use for anyone only for education purpose. Please refrain from using this repo for your external projects.
+This github repo is only for those who wants to know how to build a website for the assigment of Website development. Please use this repo as for inspiration or guideance and use the code at your own risk. The code worked on the tester's machine.
