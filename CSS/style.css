@@ -69,6 +69,7 @@ body {
     background-image: url(../Image/Banner/hero.png);
     background-attachment: fixed;
     background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     gap: var(--g-big);
