@@ -84,6 +84,7 @@ body {
     color: var(--white);
     background-attachment: fixed;
     background-size: 100%;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     gap: var(--g-big);
