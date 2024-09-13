@@ -1,12 +1,15 @@
 @import url(./style.css);
 @import url(./utility.css);
 
+/* debugging components */
 .tb{
     border: 2px solid red;
 }
 .tb_bg{
     background-color: red;
 }
+
+/* web styles */
 
 .humburger-button{
     width: 30px;
@@ -22,19 +25,19 @@
     background-color: var(--primary);
 }
 
-.page_btn{
+.page__btn{
     text-decoration: none;
     padding: 10px;
     color: var(--white);
     transition: all 0.5s ease-in-out;
 }
 
-.page_btn:hover{
+.page__btn:hover{
     color: var(--white);
     background-color: var(--black);
 }
 
-.page_btn_nh{
+.page__btn_nh{
     text-decoration: none;
     padding: 10px;
     color: var(--white);
@@ -85,16 +88,15 @@
 .fixed_heading{
     width: 200px;
 }
-.heading_box{
+.heading__box{
     display: flex;
     justify-content: center;
     padding: var(--g-xsml);
 }
 .ib_p{
-    padding-inline: var(--g-lxl);
-    padding-block: var(--g-mid);
+    padding: var(--g-mid) var(--g-lxl);
 }
-.left-border{
+.about__subheading{
     padding-left: 5px;
     border-left: 3px solid var(--dominant);
 }

@@ -54,13 +54,13 @@ body {
     scroll-behavior: smooth;
 }
 
-#PageBody {
+#Page {
     width: 100%;
     height: 100%;
     background-color: var(--white);
 }
 
-.page_hero {
+.page__hero {
     width: 100%;
     height: 700px;
     padding-inline: var(--g-lxl);
@@ -76,7 +76,7 @@ body {
     position: relative;
 }
 
-.web_hero {
+.web__hero {
     width: 100%;
     height: 350px;
     padding-inline: var(--g-lxl);
@@ -112,39 +112,39 @@ body {
     width: 100%;
 }
 
-.navigation {
+.page__nav {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.navigation .navlinks {
+.page__nav .page__navlinks {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.navigation ul li {
+.page__nav ul li {
     list-style-type: none;
 }
 
-.navigation ul li a {
+.page__nav ul li a {
     font-size: var(--dk-xml-text);
     color: inherit;
     text-decoration: none;
 }
 
-.navigation ul li a:hover {
+.page__nav ul li a:hover {
     color: var(--secondary);
     font-weight: var(--mthick);
 }
 
-.navigation ul .active {
+.page__nav ul .active {
     padding-block: 10px;
     border-bottom: 2px solid var(--secondary);
 }
 
-.navigation ul .active:hover {
+.page__nav ul .active:hover {
     font-weight: var(--light);
 }
 
@@ -162,7 +162,7 @@ body {
     display: none;
 }
 
-.scroll_down {
+.web__scrolldownbtn {
     padding: var(--g-xsml);
     border: 1px solid var(--white);
     position: absolute;
@@ -199,7 +199,7 @@ body {
     }
 }
 
-.scroll_down img {
+.web__scrolldownbtn img {
     width: 20px;
 }
 
@@ -218,7 +218,7 @@ body {
     gap: var(--g-sml);
 }
 
-.about_sect {
+.about__sect {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -226,7 +226,7 @@ body {
     padding: var(--g-sml);
 }
 
-.about_content {
+.about__content {
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -234,38 +234,38 @@ body {
     justify-self: start;
 }
 
-.about_sect .btn_box a {
+.about__sect .btn_box a {
     color: var(--primary);
     border: 2px solid var(--primary);
 }
 
-.about_sect .about_image {
+.about__sect .about__image {
     width: 50%;
 }
 
-.about_sect .about_image img {
+.about__sect .about__image img {
     width: 100%;
 }
 
-.about_page-content {
+.about__info {
     padding: var(--g-sml) var(--g-xl);
 }
 
-.about_page-content>p {
+.about__info > p {
     padding: 10px 0px;
 }
 
-.about_page-para,
-.about_page-para>div {
+.about__para,
+.about__para > div {
     display: grid;
     gap: var(--g-sml);
 }
 
-.team_wrapper {
+.team__wrapper {
     padding-inline: var(--g-lxl);
 }
 
-.memb_wrapper {
+.member__wrapper {
     display: flex;
     justify-content: center;
     gap: var(--g-sml);
@@ -273,13 +273,14 @@ body {
     flex-wrap: wrap;
 }
 
-.member {
+.team__member {
+    width: 200px;
     display: grid;
     gap: var(--g-xsml);
     padding: 10px;
 }
 
-.member>img {
+.team__member > img {
     --img-size: 120px;
     width: var(--img-size);
     height: var(--img-size);
@@ -287,31 +288,31 @@ body {
     margin: auto;
 }
 
-.member .job_title {
+.team__member .member__role {
     border: 2px solid var(--primary);
     padding: 5px;
     color: var(--primary);
     text-align: center;
 }
 
-.member .name {
+.team__member .name {
     font-size: calc(1.5 * var(--dk-text));
     color: var(--secondary);
     text-align: center;
 }
 
-.m_social {
+.member__social {
     display: flex;
     justify-content: space-between;
     list-style-type: none;
 }
 
-.m_social img {
+.member__social img {
     background-color: var(--primary);
     padding: 10px;
 }
 
-.team_offer {
+.career__offer {
     background-color: var(--secondary);
     color: var(--white);
     padding: var(--g-sml) var(--g-xl);
@@ -447,7 +448,7 @@ body {
     text-transform: capitalize;
 }
 
-#footer {
+#page__footer {
     width: 100%;
     padding-inline: var(--g-xl);
     padding-block: var(--g-sml);
@@ -457,13 +458,13 @@ body {
     gap: var(--g-sml);
 }
 
-#footer a,
-#footer p {
+#page__footer a,
+#page__footer p {
     color: var(--primary);
     text-decoration: none;
 }
 
-.logo {
+.footer__logo {
     width: 200px;
     display: flex;
     flex-direction: column;
@@ -472,11 +473,11 @@ body {
     font-size: var(--dk-xml-texts);
 }
 
-.logo>p {
+.footer__logo > p {
     font-size: var(--dk-xml-text);
 }
 
-.logo img {
+.footer__logo img {
     width: 75px;
 }
 
@@ -538,14 +539,14 @@ body {
 @media screen and (max-width: 1000px) {
 
     .page_hero,
-    .web_hero,
-    .team_wrapper,
+    .web__hero,
+    .team__wrapper,
     .career_wrapper,
     .hbw_form {
         padding-inline: var(--g-xl);
     }
 
-    .web_hero {
+    .web__hero {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -564,14 +565,14 @@ body {
         grid-column: 3/5;
     }
 
-    .about_sect {
+    .about__sect {
         flex-direction: column;
         align-items: center;
         gap: var(--g-mid);
     }
 
-    .about_content,
-    .about_sect>.about_image {
+    .about__content,
+    .about__sect>.about__image {
         width: 80%;
         padding: 10px;
     }
@@ -591,17 +592,17 @@ body {
 
 /* tablet screen */
 @media screen and (max-width: 800px) {
-    .navigation {
+    .page__nav {
         display: flex;
         flex-direction: column;
     }
 
-    .humburger-button {
+    .page__nav--humbuger-button {
         display: flex !important;
         /* z-index: 6; */
     }
 
-    .navigation ul {
+    .page__nav ul {
         display: none;
         background-color: var(--dominant);
         color: var(--white);
@@ -611,16 +612,16 @@ body {
         transition: all 2s ease-in;
     }
 
-    .navigation .navlinks .active {
+    .page__nav .page__navlinks .active {
         padding: 0px;
         border: none;
     }
 
-    .navigation a {
+    .page__nav a {
         font-size: var(--mb-xml-text);
     }
 
-    .navigation ul .navlinks {
+    .page__nav ul .page__navlinks {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -629,13 +630,13 @@ body {
         padding: var(--g-mid) 100px;
     }
 
-    .navigation .navlinks .page_btn {
+    .page__nav .page__navlinks .page__btn {
         background-color: var(--white);
         color: var(--dominant);
         padding: 10px 20px;
     }
 
-    .humburger-button:focus-within+ul {
+    .page__nav--humbuger-button:focus-within+ul {
         display: flex;
     }
 
@@ -669,7 +670,7 @@ body {
         padding: var(--g-xsml);
     }
 
-    .web_hero {
+    .web__hero {
         padding: var(--g-xsml);
         background-repeat: no-repeat;
         background-size: cover;
@@ -689,7 +690,7 @@ body {
         width: 100%;
     }
 
-    .scroll_down {
+    .web__scrolldownbtn {
         right: auto;
         left: 0;
         margin-left: var(--g-xsml);
@@ -699,21 +700,21 @@ body {
         padding: var(--g-sml);
     }
 
-    .about_content,
-    .about_sect>.about_image {
+    .about__content,
+    .about__sect>.about__image {
         width: 100%;
         padding-inline: 10px;
     }
 
-    .team_wrapper {
+    .team__wrapper {
         padding: var(--g-sml);
     }
 
-    .team_offer {
+    .career__offer {
         padding: 20px var(--g-xsml);
     }
 
-    .about_page-content {
+    .about__info {
         padding: var(--g-sml);
     }
 
@@ -740,7 +741,7 @@ body {
     .partner_info{
         padding-block: var(--g-sml);
     }
-    #footer {
+    #page__footer {
         padding-inline: var(--g-sml);
     }
 
@@ -756,12 +757,12 @@ body {
         font-size: var(--dk-text);
     }
 
-    .logo {
+    .footer__logo {
         width: 100%;
         font-size: var(--mb-text);
     }
 
-    .logo img {
+    .footer__logo img {
         width: 50px;
     }
     .course_wrapper{

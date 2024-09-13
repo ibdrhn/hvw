@@ -20,26 +20,26 @@
 </head>
 
 <body>
-    <main id="PageBody">
-        <section class="page_hero">
+    <main id="Page">
+        <section class="page__hero">
             <header class="page__header">
                 <div class="page__logo">
                     <a href="./index.html"><img src="./Image/Logo/Full_logo.png" alt="Hot Beans Web Logo"></a>
                 </div>
-                <nav class="navigation">
-                    <div class="humburger-button" tabindex="0">
+                <nav class="page__nav">
+                    <div class="page__nav--humburger" tabindex="0">
                         <span></span>
                         <span></span>
                         <span></span>
                     </div>
                     <ul>
-                        <div class="navlinks">
+                        <div class="page__navlinks">
                             <li><a href="./index.html" class="active">Home</a></li>
                             <li><a href="./about.html">About us</a></li>
                             <li><a href="./team.html">Team</a></li>
                             <li><a href="./courses.html">Courses</a></li>
                             <li><a href="./partner.html">Partners</a></li>
-                            <a href="./contact.html" class="page_btn bg_dominant">
+                            <a href="./contact.html" class="page__btn bg--dominant">
                                 Call us
                             </a>
                             <li class="close">Close</li>
@@ -57,9 +57,9 @@
                     businesses in UK.
                 </p>
                 <div class="btn_box">
-                    <a href="./contact.html" class="page_btn_nh bg_dominant">Book a call</a>
+                    <a href="./contact.html" class="page__btn_nh bg_dominant">Book a call</a>
                 </div>
-                <a href="#footer" class="scroll_down">
+                <a href="#footer" class=".web__scrolldownbtn">
                     <img src="./Image/Icons/scroll-down.svg" alt="scroll down button">
                 </a>
             </div>
@@ -73,8 +73,8 @@
                 <img src="./Image/Brands/tbgs.png" alt="tbgs logo" class="even_img">
             </div>
         </section>
-        <section class="about_sect">
-            <div class="about_content">
+        <section class="about__sect">
+            <div class="about__content">
                 <h1 class="page__heading fixed_heading">About us</h1>
                 <h2 class="page__subheading">
                     We are the no 1 website development and digital agency in UK, helping local businesses to grow as
@@ -89,16 +89,16 @@
                     your website in the top list of google.
                 </p>
                 <div class="btn_box">
-                    <a href="./about.html" class="page_btn_nh">Learn more</a>
+                    <a href="./about.html" class="page__btn_nh">Learn more</a>
                 </div>
             </div>
-            <div class="about_image">
+            <figure class="about__image">
                 <img src="./Image/about.jpg" alt="HWB about us">
-            </div>
+            </figure>
         </section>
-        <footer id="footer">
+        <footer id="page__footer">
             <section class="footer__wrapper">
-                <div class="logo">
+                <div class="footer__logo">
                     <a href="./index.html"><img src="./Image/Logo/Simplified.png" alt="HBW logo"></a>
                     <p>
                         A website development company serving website to the local businesses since 2006
@@ -131,15 +131,21 @@
                     <ul>
                         <h6 class="footer__heading social_links">Follow us</h6>
                         <div class="social">
-                            <li><a href="" class="social__icon">
+                            <li>
+                                <a href="" class="social__icon">
                                     <img src="./Image/Icons/facebook.svg" alt="HBW page icon">
-                                </a></li>
-                            <li><a href="" class="social__icon">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="social__icon">
                                     <img src="./Image/Icons/instagram.svg" alt="HBW page icon">
-                                </a></li>
-                            <li><a href="" class="social__icon">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="social__icon">
                                     <img src="./Image/Icons/twitter.svg" alt="HBW page icon">
-                                </a></li>
+                                </a>
+                            </li>
                         </div>
                     </ul>
                 </nav>

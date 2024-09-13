@@ -1,42 +1,42 @@
 @import url(./style.css);
 @import url(./all.css);
 
-.bg_primary{
+.bg--primary{
     background-color: var(--primary);
 }
-.bg_secondary{
+.bg--secondary{
     background-color: var(--secondary);
 }
-.bg_dominant{
+.bg--dominant{
     background-color: var(--dominant);
 }
-.bg_primary{
+.bg--primary{
     background-color: var(--primary);
 }
-.bg_transparent{
+.bg--transparent{
     background-color: var(--transparent);
 }
-.bg_black{
+.bg--black{
     background-color: var(--black);
 }
-.bg_about{
+.bg--about{
     background-image: url(../Image/Banner/about.png);
 }
-.bg_team{
+.bg--team{
     background-image: url(../Image/Banner/team.png);
 }
-.bg_partners{
+.bg--partners{
     background-image: url(../Image/Banner/partner.png);
 }
-.bg_courses{
+.bg--courses{
     background-image: url(../Image/Banner/course.png);
 }
-.bg_career{
+.bg--career{
     background-image: url(../Image/Banner/career.png);
 }
-.bg_career-apply{
+.bg--career-apply{
     background-image: url(../Image/Banner/career-apply.png);
 }
-.bg_contact{
+.bg--contact{
     background-image: url(../Image/Banner/contact.png);
 }

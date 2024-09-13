@@ -20,26 +20,26 @@
 </head>
 
 <body>
-    <main id="PageBody">
-        <section class="web_hero bg_team">
+    <main id="Page">
+        <section class="web__hero bg--team">
             <header class="page__header">
                 <div class="page__logo">
-                    <img src="./Image/Logo/Full_logo.png" alt="Hot Beans Web Logo">
+                    <a href="./index.html"><img src="./Image/Logo/Full_logo.png" alt="Hot Beans Web Logo"></a>
                 </div>
-                <nav class="navigation">
-                    <div class="humburger-button" tabindex="0">
+                <nav class="page__nav">
+                    <div class="page__nav--humburger" tabindex="0">
                         <span></span>
                         <span></span>
                         <span></span>
                     </div>
                     <ul>
-                        <div class="navlinks">
-                            <li><a href="./index.html">Home</a></li>
+                        <div class="page__navlinks">
+                            <li><a href="./index.html" class="active">Home</a></li>
                             <li><a href="./about.html">About us</a></li>
-                            <li><a href="./team.html" class="active">Team</a></li>
+                            <li><a href="./team.html">Team</a></li>
                             <li><a href="./courses.html">Courses</a></li>
                             <li><a href="./partner.html">Partners</a></li>
-                            <a href="./contact.html" class="page_btn bg_dominant">
+                            <a href="./contact.html" class="page__btn bg--dominant">
                                 Call us
                             </a>
                             <li class="close">Close</li>
@@ -54,57 +54,57 @@
         </section>
 
         <!-- contents are here -->
-        <section class="team_wrapper">
-            <div class="heading_box">
+        <section class="team__wrapper">
+            <div class="heading__box">
                 <h1 class="page__heading">Meet the team</h1>
             </div>
-            <div class="memb_wrapper">
-                <div class="member">
+            <div class="member__wrapper">
+                <div class="team__member">
                     <img src="./Image/Team/memb_1.png" alt="Team member">
-                    <p class="job_title">Front-end developer</p>
-                    <p class="name">James Williams</p>
-                    <a href="mailto:" class="email page_btn bg_primary" style="text-align: center;">Email</a>
-                    <ul class="m_social">
-                        <li><a href=""><img src="./Image/Icons/facebook.svg" alt=""></a></li>
-                        <li><a href=""><img src="./Image/Icons/instagram.svg" alt=""></a></li>
-                        <li><a href=""><img src="./Image/Icons/twitter.svg" alt=""></a></li>
+                    <p class="member__role">Front-end developer</p>
+                    <p role="name">James Williams</p>
+                    <a role="email" href="mailto:" class="page__btn bg_primary" style="text-align: center;">Email</a>
+                    <ul class="member__social">
+                        <li><a href="https://ibdrhn.netlify.app"><img src="./Image/Icons/facebook.svg" alt=""></a></li>
+                        <li><a href="https://ibdrhn.netlify.app"><img src="./Image/Icons/instagram.svg" alt=""></a></li>
+                        <li><a href="https://ibdrhn.netlify.app"><img src="./Image/Icons/twitter.svg" alt=""></a></li>
                     </ul>
                 </div>
-                <div class="member">
+                <div class="team__member">
                     <img src="./Image/Team/memb_2.png" alt="Team member">
-                    <p class="job_title">Back-end Developer</p>
+                    <p class="member__role">Back-end Developer</p>
                     <p class="name">Eidrak Hossain</p>
-                    <a href="mailto:" class="email page_btn bg_primary" style="text-align: center;">Email</a>
-                    <ul class="m_social">
+                    <a href="mailto:" class="email page__btn bg_primary" style="text-align: center;">Email</a>
+                    <ul class="member__social">
                         <li><a href=""><img src="./Image/Icons/facebook.svg" alt=""></a></li>
                         <li><a href=""><img src="./Image/Icons/instagram.svg" alt=""></a></li>
                         <li><a href=""><img src="./Image/Icons/twitter.svg" alt=""></a></li>
                     </ul>
                 </div>
-                <div class="member">
+                <div class="team__member">
                     <img src="./Image/Team/memb_3.png" alt="Team member">
-                    <p class="job_title">UX/UI Designer</p>
+                    <p class="member__role">UX/UI Designer</p>
                     <p class="name">Ibjad Raman</p>
-                    <a href="mailto:" class="email page_btn bg_primary" style="text-align: center;">Email</a>
-                    <ul class="m_social">
+                    <a href="mailto:" class="email page__btn bg_primary" style="text-align: center;">Email</a>
+                    <ul class="member__social">
                         <li><a href=""><img src="./Image/Icons/facebook.svg" alt=""></a></li>
                         <li><a href=""><img src="./Image/Icons/instagram.svg" alt=""></a></li>
                         <li><a href=""><img src="./Image/Icons/twitter.svg" alt=""></a></li>
                     </ul>
                 </div>
-                <div class="member">
+                <div class="team__member">
                     <img src="./Image/Team/memb_4.png" alt="Team member">
-                    <p class="job_title">SEO Expert</p>
+                    <p class="member__role">SEO Expert</p>
                     <p class="name">Rehan Miah</p>
-                    <a href="mailto:" class="email page_btn bg_primary" style="text-align: center;">Email</a>
-                    <ul class="m_social">
+                    <a href="mailto:" class="email page__btn bg_primary" style="text-align: center;">Email</a>
+                    <ul class="member__social">
                         <li><a href=""><img src="./Image/Icons/facebook.svg" alt=""></a></li>
                         <li><a href=""><img src="./Image/Icons/instagram.svg" alt=""></a></li>
                         <li><a href=""><img src="./Image/Icons/twitter.svg" alt=""></a></li>
                     </ul>
                 </div>
             </div>
-            <div class="team_offer">
+            <div class="career__offer">
                 <h1 class="page__subheading" style="color: var(--white);">
                     Want to be part of the team?
                 </h1>
@@ -112,13 +112,15 @@
                     Join our wonderful team to work with pur expert precious team member who are always helpful to each
                     other . Apply today for a job role.
                 </p>
-                <div class="button_box"><a href="./career.html" class="page_btn bg_black">Apply now</a></div>
+                <div class="button_box">
+                    <a href="./career.html" class="page__btn bg_black">Apply now</a>
+                </div>
             </div>
         </section>
 
-        <footer id="footer">
+        <footer id="page__footer">
             <section class="footer__wrapper">
-                <div class="logo">
+                <div class="footer__logo">
                     <a href="./index.html"><img src="./Image/Logo/Simplified.png" alt="HBW logo"></a>
                     <p>
                         A website development company serving website to the local businesses since 2006
@@ -151,15 +153,21 @@
                     <ul>
                         <h6 class="footer__heading social_links">Follow us</h6>
                         <div class="social">
-                            <li><a href="" class="social__icon">
+                            <li>
+                                <a href="" class="social__icon">
                                     <img src="./Image/Icons/facebook.svg" alt="HBW page icon">
-                                </a></li>
-                            <li><a href="" class="social__icon">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="social__icon">
                                     <img src="./Image/Icons/instagram.svg" alt="HBW page icon">
-                                </a></li>
-                            <li><a href="" class="social__icon">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="social__icon">
                                     <img src="./Image/Icons/twitter.svg" alt="HBW page icon">
-                                </a></li>
+                                </a>
+                            </li>
                         </div>
                     </ul>
                 </nav>
@@ -171,6 +179,7 @@
                 </span>
             </div>
         </footer>
+    </main>
     </main>
 </body>
 
